@@ -12,6 +12,7 @@ import classNames from "classnames";
 const GithubUserContainer = observer(() => {
     const user = searchStore.user;
     const isLoading = searchStore.isLoading;
+    console.log("user", user);
 
     const Component = {
         undefined: DidNotSearched,
