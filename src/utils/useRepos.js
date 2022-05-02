@@ -12,11 +12,7 @@ export default function useRepos(reposUrl, perPage, reposCount) {
                 url.searchParams.append("page", currentPage);
                 url.searchParams.append("per_page", perPage);
                 setIsLoading(true);
-                const response = await fetch(url.toString(), {
-                    headers: {
-                        Authorization: "token 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"
-                    }
-                });
+                const response = await fetch(url.toString());
                 setRepos(await response.json());
             } catch(e) {
                 console.error(e);
