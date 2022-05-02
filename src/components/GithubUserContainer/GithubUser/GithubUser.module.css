@@ -1,0 +1,143 @@
+.root {
+    display: flex;
+    width: 100%;
+    margin-top: 28px;
+}
+
+.header {
+    margin-top: 12px;
+}
+
+.avatar {
+    max-width: 280px;
+    max-height: 280px;
+    border-radius: 100%;
+}
+
+.name {
+    margin-top: 28px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 130%;
+}
+
+.login {
+    margin-top: 12px;
+    display: block;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.followersAndFollowing, .followers, .following {
+    display: flex;
+}
+
+.followersAndFollowing {
+    white-space: nowrap;
+}
+
+.followersAndFollowing img {
+    margin-right: 8px;
+}
+
+.followersAndFollowing {
+    margin-top: 25px;
+}
+
+.followers {
+    margin-right: 16px;
+}
+
+.repositories {
+    margin-left: 85px;
+    flex-grow: 1;
+}
+
+.reposList {
+    min-height: 550px;
+}
+
+.repository {
+    margin-top: 24px;
+    padding: 24px 32px;
+    min-height: 112px;
+}
+
+.reposHeader {
+    margin-bottom: 29px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+}
+
+.repositoryName {
+    margin-bottom: 16px;
+    display: block;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0064EB;
+    text-decoration: none;
+}
+
+.repositoryDescription {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.emptyReposList {
+    margin: auto;
+    margin-top: 193px;
+}
+
+.loader {
+    margin: 0 auto;
+}
+
+.reposLoader {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 850px) {
+    .root {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .reposHeader {
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    .repositories {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .reposHeader {
+        font-size: 24px;
+    }
+
+    .repository {
+        margin-top: 0;
+        padding: 0;
+    }
+}

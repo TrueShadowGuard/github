@@ -1,0 +1,23 @@
+.root {
+    flex-grow: 1;
+    display: flex;
+}
+
+.inner {
+    display: flex;
+    width: 100%;
+    padding-left: 56px;
+    padding-right: 56px;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .inner {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
