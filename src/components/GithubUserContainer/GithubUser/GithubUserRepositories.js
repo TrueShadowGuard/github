@@ -19,7 +19,7 @@ export default function GithubUserRepositories({user}) {
                     <Loader/>
                 </div> :
                 <div className={classes.reposList}>
-                    {repos.map((repository) => <GithubUserRepository repository={repository} key={repository.name}/>)}
+                    {repos?.map((repository) => <GithubUserRepository repository={repository} key={repository.name}/>)}
                 </div>
             }
             <Pagination currentPage={currentPage}

@@ -14,7 +14,7 @@ export default function useRepos(reposUrl, perPage, reposCount) {
                 setIsLoading(true);
                 const response = await fetch(url.toString(), {
                     headers: {
-                        Authorization: "token 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"
+                        Authorization: "token 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"
                     }
                 });
                 setRepos(await response.json());
