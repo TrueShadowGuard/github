@@ -11,6 +11,7 @@ export default function useRepos(reposUrl, perPage, reposCount) {
                 const url = new URL(reposUrl);
                 url.searchParams.append("page", currentPage);
                 url.searchParams.append("per_page", perPage);
+                url.searchParams.append("sort", "updated");
                 setIsLoading(true);
                 const response = await fetch(url.toString());
                 setRepos(await response.json());

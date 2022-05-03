@@ -34,6 +34,6 @@ export default function GithubUserRepositories({user}) {
 
 const EmptyReposList = () => (
     <div className={classes.emptyReposList}>
-        <TextWithImage image={repos} text={"GithubUserRepository list is empty"}/>
+        <TextWithImage image={repos} text={"Repository list is empty"}/>
     </div>
 );
