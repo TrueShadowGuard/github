@@ -8,11 +8,12 @@ import TextWithImage from "../TextWithImage/TextWithImage";
 import searchStore from "../../state/searchStore";
 import GithubUser from "./GithubUser/GithubUser";
 import classNames from "classnames";
+import {toJS} from "mobx";
 
 const GithubUserContainer = observer(() => {
     const user = searchStore.user;
     const isLoading = searchStore.isLoading;
-    console.log("user", user);
+    console.log("user", toJS(user));
 
     const Component = {
         undefined: DidNotSearched,

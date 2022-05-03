@@ -12,7 +12,7 @@ export default function GithubUserHeader({user}) {
         <header className={classes.header}>
             <img className={classes.avatar} src={user.avatar_url} alt="user avatar"/>
             <p className={classes.name}>{user.name}</p>
-            <a className={classes.login} href={user.html_url}>{user.login}</a>
+            <a className={classes.login} href={user.html_url} target={"_blank"}>{user.login}</a>
             <div className={classes.followersAndFollowing}>
                 <div className={classes.followers}>
                     <img src={twoUsers} alt="two users"/>

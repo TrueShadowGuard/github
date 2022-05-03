@@ -5,9 +5,9 @@ import ArrowLeft from "./ArrowLeft";
 import ArrowRight from "./ArrowRight";
 
 
-const Pagination = ({currentPage, lastPage, perPage, itemsCount, setCurrentPage, ...props}) => {
+const Pagination = ({currentPage, lastPage, perPage, itemsCount, setCurrentPage}) => {
     const firstItemIndex = (currentPage - 1) * perPage + 1;
-    const lastItemIndex = Math.min(firstItemIndex + perPage, itemsCount);
+    const lastItemIndex = Math.min(firstItemIndex + perPage - 1, itemsCount);
 
     return (
         <div className={classes.root}>
